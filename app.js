@@ -11,7 +11,7 @@ var read = fs.readFileSync('readme.txt', 'utf8');
 console.log(read);
 fs.writeFileSync('writeme.txt',read);
 
-fs.readFile('readme.txt','utf8',function(err,data){
+fs.readFile('readme.txt','utf8',function ( err, data){
     fs.writeFile('writeme.txt', data);
 });
 
