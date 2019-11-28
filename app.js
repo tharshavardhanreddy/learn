@@ -9,3 +9,4 @@ console.log(count.add(count.pi,5));
 var fs = require('fs');
 var read = fs.readFileSync('readme.txt', 'utf8');
 console.log(read);
+fs.writeFileSync('writeme.txt',read);
