@@ -12,7 +12,7 @@ console.log(read);
 fs.writeFileSync('writeme.txt',read);
 
 fs.readFile('readme.txt','utf8',function(err,data){
-    console.log(data);
+    fs.writeFile('writeme.txt', data);
 });
 
 console.log('test');
