@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 
-var stream = fs.createReadStream(__dirname + './readme', 'uft8');
+var stream = fs.createReadStream(__dirname + '/readme.txt');
 stream.on('data',function(chunk){
     console.log('chunk arrived -------------------------------------------------------------------------------');
     console.log(chunk);
